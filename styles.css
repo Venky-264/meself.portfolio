@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Orbitron:wght@500&family=Prosto+One&family=Rubik+Vinyl&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=East+Sea+Dokdo&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aliceblue;
+}
+p{
+    text-align: justify;
+}
+
+
+/*navbar*/
+.navbar{
+    background-color:#205295;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.navbar .logo{
+    display: inline;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-weight: 1000;
+    margin-left: 40px;
+    padding:10px;
+    font-size: 25px;
+    background-color: #143e74;
+    border-radius: 10%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul{
+    float:right;
+    padding: 30px;
+}
+.navbar ul li{
+    display: inline;
+    padding: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar ul li:hover{
+    background-color:#143e74;
+}
+#check{
+    display: none;
+}
+#cancel,#toggle{
+    float: right;
+    line-height: 70px;
+    margin-right: 30px;
+    display: none;
+}
+
+
+/*introduction*/
+.introduction{
+    margin-top: 130px;
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+.info{
+    padding: 10px;
+    margin-top:50px;
+    flex-basis: 60%;
+    margin-left: 30px;
+}
+.info p{
+    font-size: 25px;
+    font-weight: 700;
+    font-family:'Courgette';
+    margin-bottom: 10px;
+    color: black;
+}
+.info #myself{
+    margin-top: 10px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    display: inline;
+    font-family: "Orbitron";
+    color:black;
+
+}
+.info span{
+    font-size: 35px;
+    font-family: "Orbitron";
+    font-weight: 1000;
+    color: blue;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.info h3{
+    border-radius: 10%;
+    border-color: rgb(31, 178, 227);
+    padding: 15px;
+    display: inline;
+    box-shadow: 5px 4px 5px 5px goldenrod;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile{
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 25%;
+    margin-left: 40px;
+}
+.profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    padding:5px;
+    opacity: 1;
+    box-shadow: 0px 0px 5px 4px gray;
+}
+
+
+/*education*/
+.education-details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.education-details h2{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-weight: 1000;
+    font-family: monospace;
+}
+.educations{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+.educations .education{
+    padding: 25px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 8%;
+    box-shadow: 4px 8px 4px 7px rgb(188, 178, 178);
+}
+.education:hover{
+    box-shadow: 15px 5px 15px 5px rgb(197, 84, 84);
+}
+.educations .education h3{
+    font-weight: 800;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.education p{
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*skills*/
+
+.myskills{
+    padding: 20px;
+    background-color: #2c2d35;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.myskills h2{
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+    font-weight: 1000;
+    font-family: monospace;
+}
+.skills{
+    display: flex;
+    flex-flow: row wrap;
+}
+.skills .intro{
+    padding: 20px;
+    flex-basis: 40%;
+}
+.intro p{
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.languages{
+    padding: 20px;
+    flex-basis: 50%;
+}
+.languages h3{
+    display: inline;
+    margin-bottom: 5px;
+    color:white;
+    font-weight: 1000;
+    font-family: monospace;
+    font-size: 15px;
+}
+.languages span{
+    float:right;
+    color:white;
+    font-weight: 1000;
+    font-family: monospace;
+    font-size: 15px;
+}
+.languages .container{
+    padding: 0px;
+    background-color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.container .language{
+    padding:3px;
+}
+.java{
+    width: 70%;
+    background-color: blue;
+}
+.python{
+    width: 75%;
+    background-color: blue;
+}
+.html{
+    width: 85%;
+    background-color: blue;
+}
+.css{
+    width: 80%;
+    background-color: blue;
+}
+.javascript{
+    width: 65%;
+    background-color: blue;
+}
+
+
+/*services*/
+.services{
+    padding: 20px;
+    background-color: #2c2d35;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services > h2{
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+    font-weight: 1000;
+    font-family: monospace;
+    margin: 10px;
+}
+.services .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.service{
+    padding: 20px;
+    background-color:black;
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all .5s;
+    box-shadow: 5px 2px 5px 1px aliceblue;
+}
+.service h2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.service p{
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.service:hover{
+    background-color: blue;
+    transform: rotate(10deg);
+}
+.service h3{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5%;
+    border-style: solid;
+    background-color: rgb(3, 86, 240);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.service h3 a{
+    color: white;
+}
+
+
+/*feedback*/
+
+.feedback{
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.feedback h2{
+    padding: 20px;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.feedback-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.sub-container{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sub-container form{
+    padding: 25px;
+}
+.sub-container form input{
+    padding: 20px;
+    margin: 15px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    border-width: 1.5px;
+    display: block;
+    border-color: bisque;
+    box-shadow: 2px 10px 5px 3px gray;
+}
+.sub-container p{
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color:black;
+}
+
+.feedback-container ul{
+    padding: 30px;
+}
+.feedback-container ul li{
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    list-style-type:square;
+    font-size: 20px;
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feedback-container ul li a{
+    color: blue;
+}
+.feedback-container ul li a:hover{
+    color:red;
+}
+
+
+
+/*contact*/
+
+.contact{
+    padding: 20px;
+    background-color:black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact h2{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+#user,#location,#gmail,#phone{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 20%;
+    color: white;
+}
+.contact span{
+    font-size: 20px;
+    font-style:italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+.left{
+    float: left;
+    margin-left: 20px;
+}
+.contact p{
+    clear: both;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+#linkedin{
+    color: blue;
+    font-size: 50px;
+    padding: 10px;
+}
+#twitter{
+    color:rgb(24, 24, 205);
+    font-size:50px;
+    padding: 10px;
+}
+#github{
+    color: rgb(59, 59, 176);
+    font-size: 50px;
+    padding: 10px;
+}
+#insta{
+    color:crimson;
+    font-size: 50px;
+    padding: 10px;
+}
+#youtube{
+    color: red;
+    font-size: 50px;
+    padding: 10px;
+}
+#linkedin:hover{
+    background-color:rgb(27, 26, 26);
+    border-radius:20%;
+}
+#twitter:hover{
+    background-color: rgb(27, 26, 26);
+    border-radius:20%;
+}#github:hover{
+    background-color: rgb(27, 26, 26);
+    border-radius:20%;
+}#insta:hover{
+    background-color:rgb(27, 26, 26);
+    border-radius:20%;
+}#youtube:hover{
+    background-color: rgb(27, 26, 26);
+    border-radius:20%;
+}
+
+/*scroll*/
+.scroll-top{
+    background-color:slateblue;
+    position:fixed;
+    padding: 10px;
+    bottom:15px;
+    right: 20px;
+    border-style:none;
+    border-radius: 10%;
+}
+
+
+/*responsiveness*/
+
+@media screen and (max-width:970px) {
+    .service{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .education{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:880px){
+    .introduction{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .info{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .profile{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feedback-container{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .services .container{
+        grid-template-columns: auto;
+    }
+    .service{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .educations{
+        grid-template-columns: auto;
+    }
+    .educations .education{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:660px){
+    #toggle{
+        display: block;
+    }
+    .navbar ul{
+        position: fixed;
+        background-color:#205295;
+        height: 100%;
+        width: 60%;
+        left: -100%;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #toggle{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display:block;
+    }
+}
+@media screen and (max-width:500px) {
+    .introduction{
+        margin-top: 90px;
+    }
+    .service{
+        width: 80%;
+    }
+    .educations .education{
+        width: 80%;
+    }
+    .info p{
+        font-size: 20px;
+    }
+    .info span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .contact span{
+        font-size: 12px;
+    }
+    .scroll-top{
+        padding:10px;
+    }
+    #linkedin,#twitter,#github,#insta,#youtube{
+        font-size: 30px;
+    }
+    .sub-container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sub-container form{
+        padding: 15px;
+    }
+    .sub-container form input{
+       margin-left: 5px;
+       margin-right: 5px;
+       padding: 10px;
+    }
+}
+
+
+@media screen and (max-width:370px) {
+    .profile img{
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+@media screen and (max-width:350px){
+    .navbar .logo{
+        font-size: 20px;
+    }
+    .info #myself{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .service{
+        width: 90%;
+    }
+    .service h3{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .contact h2{
+        font-size: 17px;
+    }
+    .contact span{
+        font-size: 10px;
+    }
+    #user,#location,#gmail,#phone{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+        border-style: solid;
+        border-radius: 20%;
+    }
+    .left{
+        margin: 0px;
+        clear:both
+    }
+    .contact p{
+        font-size: 13px;
+        padding: 10px;
+        margin: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #linkedin,#twitter,#github,#insta,#youtube{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .profile img{
+        height: 150px;
+        width: 150px;
+    }
+    .sub-container form input{
+        width: 150px;
+    }
+}
+
